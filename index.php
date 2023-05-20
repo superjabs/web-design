@@ -21,7 +21,7 @@
       <span class="text_bold"><a href="">Freelance.</a></span>
     </p>
     <div class="btn-resume">
-      <a href="about.php">kenal lebih jauh</a>
+      <a href="about.php">tentang saya</a>
     </div>
   </div>
 </section>
@@ -31,9 +31,17 @@
   <h1>Kegiatan Saya</h1>
 	<div class="slider-wrapper">
 		<div class="slider">
-			<img id="slide-1" src="assets/img/slider/1.jpg"/>
-			<img id="slide-2" src="assets/img/slider/2.jpg"/>
-			<img id="slide-3" src="assets/img/slider/3.jpg"/>
+      <?php 
+        $sql = "SELECT * FROM konten";
+        $result = $conn->query($sql);
+        $i = 1;
+
+        while($data = $result->fetch_assoc()){
+          echo "
+            <img id='slide-" . $i++ . "' src='" . $data['nama'] . "'/>
+          ";
+        }
+      ?>
 		</div>
 		<div class="slider-nav">
 			<a href="#slide-1"></a>
