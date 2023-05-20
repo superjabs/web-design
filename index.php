@@ -6,8 +6,8 @@
 
 <section class="content">
   <div class="content_heading">
-    <h1>Halo saya Alfian.</h1>
-    <h2>Seorang Mahasiswa dan Frontend Web Developer</h2>
+    <h4>Halo saya Gus Jabung Al Fiansyah.</h4>
+    <h3>Seorang Mahasiswa dan Frontend Web Developer</h3>
   </div>
   <div class="content_subheading">
     <p>
