@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Public Sans", sans-serif;
 }
@@ -42,7 +46,7 @@ nav a {
 
 /* content section */
 .content {
-  padding: 100px;
+  padding: 120px 100px 50px 100px;
 }
 
 .content_heading {
@@ -63,9 +67,13 @@ nav a {
   color: black;
 }
 
-.btn-resume {
-  margin-top: 70px;
+.btn-resume a {
   color: white;
+  text-decoration: none;
+}
+
+.btn-resume {
+  margin-top: 80px;
   background-color: black;
   width: max-content;
   padding: 15px 40px;
@@ -79,6 +87,71 @@ nav a {
   color: white;
 }
 /* end */
+
+/* image slider */
+.slider-container {
+  padding: 1rem;
+}
+
+.slider-container h1 {
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+.slider-wrapper {
+  position: relative;
+  max-width: 48rem;
+  margin: 0 auto;
+}
+
+.slider {
+  display: flex;
+  aspect-ratio: 16 / 9;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+  border-radius: 0.5rem;
+  -ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.slider::-webkit-scrollbar {
+  display: none;
+}
+
+.slider img {
+  flex: 1 0 100%;
+  scroll-snap-align: start;
+  object-fit: cover;
+  filter: grayscale(40%);
+}
+
+.slider-nav {
+  display: flex;
+  column-gap: 1rem;
+  position: absolute;
+  bottom: 1.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.slider-nav a {
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 50%;
+  background-color: #fff;
+  opacity: 0.75;
+  transition: opacity ease 250ms;
+}
+
+.slider-nav a:hover {
+  opacity: 1;
+}
+
+/* end image slider */
 
 /* project section */
 .project {
@@ -187,6 +260,13 @@ article h3 {
   border-bottom: 1px solid black;
 }
 
+article h2 {
+  margin: 20px;
+  border-bottom: 2px solid black;
+  padding-bottom: 10px;
+  width: max-content;
+}
+
 .experience-title {
   display: flex;
   justify-content: space-between;
@@ -205,7 +285,7 @@ li {
 
 /* timeline */
 .timeline-section {
-  padding: 20px 0;
+  padding: 40px;
 }
 
 .timeline-items {
