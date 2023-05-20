@@ -139,10 +139,10 @@ nav a {
 }
 
 .slider-nav a {
-  width: 0.5rem;
-  height: 0.5rem;
+  width: 0.8rem;
+  height: 0.8rem;
   border-radius: 50%;
-  background-color: #fff;
+  background-color: #ffffff;
   opacity: 0.75;
   transition: opacity ease 250ms;
 }
@@ -285,7 +285,7 @@ li {
 
 /* timeline */
 .timeline-section {
-  padding: 40px;
+  padding: 30px;
 }
 
 .timeline-items {
@@ -308,7 +308,7 @@ li {
   position: relative;
 }
 .timeline-item:last-child {
-  margin-bottom: 0;
+  margin-bottom: -50px;
 }
 .timeline-item {
   padding-left: 35px;
