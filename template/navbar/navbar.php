@@ -9,7 +9,7 @@ echo '
     <a href="pendidikan.php">Pendidikan</a>
     </nav>
     <div class="btn-login">
-    <a href="login.php">Me.</a>
+    <a href="login.php">Login.</a>
     </div>
 </header>
 ';
