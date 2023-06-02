@@ -21,7 +21,7 @@
       <span class="text_bold"><a href="">Freelance.</a></span>
     </p>
     <div class="btn-resume">
-      <a href="about.php">tentang saya</a>
+      <a href="tentang.php">tentang saya</a>
     </div>
   </div>
 </section>
